@@ -1,0 +1,273 @@
+.InsightPage {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+.max-width-InsightPage {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headind-InsightPage-container {
+    padding-top: 200px;
+}
+
+.headind-InsightPage-container h1 {
+    color: #5B00C9;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 19.5px;
+    font-size: 15px;
+    letter-spacing: 1.04px;
+}
+
+.headind-InsightPage-container p {
+    color: #0D0D0F;
+    font-family: 'Poppins';
+    font-weight: bold;
+    line-height: 65.3px;
+    font-size: 64px;
+    letter-spacing: 1.92px;
+    padding-top: 15px;
+}
+
+.headind-InsightPage-container span {
+    color: #5B00C9;
+    font-family: 'Poppins';
+    font-weight: bold;
+    line-height: 65.3px;
+    font-size: 64px;
+    letter-spacing: 1.92px;
+}
+
+.headind-InsightPage-container h2 {
+    color: #6B6B72;
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 26.3px;
+    font-size: 17.5px;
+    letter-spacing: 1.92px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.two-InsightPage-containe {
+    border-top: 1px solid #E6E3EC;
+    padding-top: 100px;
+}
+
+.button {
+    display: flex;
+    gap: 30px;
+}
+
+.button button {
+    border: 1px solid;
+    padding: 7px 7px;
+    background-color: #FFFFFF;
+    color: #6B6B72;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.button button:hover {
+    background-color: #0D0D0F;
+    color: white;
+}
+
+.InsightPage-box-container {
+    padding-top: 40px;
+    text-align: start;
+}
+
+.show-first-img-content {
+    display: flex;
+    gap: 10px;
+}
+
+.show-sec-img-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.show-third-img-content {
+    display: flex;
+    gap: 70px;
+    padding-top: 30px;
+}
+
+.last-container {
+    padding-top: 180px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.full-container h1 {
+    font-family: 'Inter';
+    font-weight: 800;
+    line-height: 18px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #5B00C9;
+    padding-top: 15px;
+}
+
+.full-container p {
+    font-family: 'Poppins';
+    font-weight: bold;
+    line-height: 22.5px;
+    font-size: 18px;
+    color: #0D0D0F;
+    padding-top: 15px;
+}
+
+.full-container h2 {
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 19.5px;
+    font-size: 13px;
+    color: #6B6B72;
+    padding-top: 10px;
+}
+
+.last-container button {
+    border: 1px solid gray;
+    width: 200px;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #0D0D0F;
+    color: #FFFFFF;
+}
+
+.last-container h1 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    line-height: 60.5px;
+    font-size: 56px;
+    letter-spacing: 1.68px;
+    color: #0D0D0F;
+    padding-top: 19px;
+}
+
+.last-container p {
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 24.5px;
+    font-size: 16.5px;
+    color: #6B6B72;
+    padding-top: 21px;
+    padding-bottom: 20px
+}
+
+.last-container button:hover {
+    background-color: #5B00C9;
+}
+
+/* ========== RESPONSIVE - TABLET (max-width: 768px) ========== */
+@media (max-width: 768px) {
+    .headind-InsightPage-container {
+        padding-top: 120px;
+    }
+
+    .headind-InsightPage-container p,
+    .headind-InsightPage-container span {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1px;
+    }
+
+    .headind-InsightPage-container h2 {
+        font-size: 15.5px;
+        padding-bottom: 50px;
+    }
+
+    .two-InsightPage-containe {
+        padding-top: 60px;
+    }
+
+    .button {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .show-first-img-content {
+        flex-direction: column;
+    }
+
+    .show-sec-img-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .show-third-img-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .last-container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .last-container h1 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+    .last-container p {
+        font-size: 15px;
+    }
+}
+
+/* ========== RESPONSIVE - MOBILE (max-width: 480px) ========== */
+@media (max-width: 480px) {
+    .headind-InsightPage-container {
+        padding-top: 90px;
+    }
+
+    .headind-InsightPage-container h1 {
+        font-size: 13px;
+    }
+
+    .headind-InsightPage-container p,
+    .headind-InsightPage-container span {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+    }
+
+    .headind-InsightPage-container h2 {
+        font-size: 14.5px;
+        letter-spacing: 0.3px;
+        padding-bottom: 35px;
+    }
+
+    .button {
+        gap: 10px;
+    }
+
+    .button button {
+        flex: 1 1 45%;
+        text-align: center;
+    }
+
+    .full-container p {
+        font-size: 16px;
+    }
+
+    .last-container {
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    .last-container h1 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .last-container button {
+        width: 100%;
+    }
+}
