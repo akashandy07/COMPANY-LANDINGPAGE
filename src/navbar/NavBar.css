@@ -133,7 +133,7 @@
     .nav-links {
         position: absolute;
         top: 95px;
-        left: -100%;
+        left: -200%;
         width: 100%;
         background: #fff;
         flex-direction: column;
