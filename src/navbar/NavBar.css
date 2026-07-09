@@ -85,3 +85,81 @@
 .talk-btn:hover {
     background-color: #6D5BD0;
 }
+
+/* Hide hamburger on desktop */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #0D0D0F;
+}
+
+/* Hide mobile buttons */
+.mobile-btn {
+    display: none;
+}
+
+/* ==========================
+   Tablet & Mobile
+========================== */
+
+@media (max-width: 768px) {
+
+    .nav-bar-content {
+        padding: 0 20px;
+    }
+
+    .navbar-inner {
+        align-items: center;
+        height: 95px;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 10001;
+    }
+
+    .desktop-btn {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 95px;
+        left: -100%;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 40px 0;
+        transition: .4s ease;
+        border-top: 1px solid #E5E7EB;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .client-login,
+    .talk-btn {
+        width: 220px;
+        text-align: center;
+    }
+
+    .talk-btn {
+        padding: 12px;
+    }
+}
