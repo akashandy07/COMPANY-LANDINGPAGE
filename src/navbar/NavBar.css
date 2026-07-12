@@ -162,4 +162,9 @@
     .talk-btn {
         padding: 12px;
     }
+
+    .nav-bar-content {
+        max-width: 350px;
+        margin: 0px auto;
+    }
 }

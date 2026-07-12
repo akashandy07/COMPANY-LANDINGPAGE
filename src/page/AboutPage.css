@@ -310,8 +310,6 @@
 
 /* CTA Section */
 .cta-container {
-    padding: 120px 0;
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -334,10 +332,10 @@
     margin-bottom: 36px;
 }
 
-.cta-buttons {
+/* .cta-buttons {
     width: 100%;
     text-align: center;
-    margin: 0px;
+    
 }
 
 .cta-buttons .btn-primary {
@@ -356,6 +354,33 @@
 
 
 
+} */
+.cta-buttons .btn-primary {
+    width: 200px;
+    text-align: center;
+
+}
+
+.cta-buttons .btn-outline {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #6b6b72;
+    padding: 10px 10px;
+
+
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.make-gud {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 20px;
 }
 
 
@@ -411,6 +436,7 @@
     }
 
     .stats-grid {
+
         display: flex;
         flex-direction: column;
     }
@@ -420,6 +446,48 @@
         flex-direction: column;
     }
 
-   
+    .about-hero-heading h1 {
+        font-size: 37px;
+
+    }
+
+    .values-grid div {
+        border-bottom: 1px solid #6b6b72;
+        padding-bottom: 25px;
+    }
+
+    .stats-grid .stat-item {
+        border-bottom: 1px solid #6b6b72;
+        border-right: none;
+        padding-bottom: 25px;
+        padding-top: 60px;
+
+    }
+
+    .stats-grid .stat-item:nth-child(4) {
+        border-bottom: none;
+        padding-bottom: 25px;
+
+    }
+
+
+    .cta-content h2 {
+        font-size: 23px;
+
+    }
+
+    .cta-buttons .btn-primary {
+        width: 100%;
+        padding: 3px 10px;
+        font-size: 20px;
+        
+    }
+
+    .cta-buttons .btn-outline {
+        width: 100%;
+        padding: 3px 10px;
+    }
+
+
 
 }

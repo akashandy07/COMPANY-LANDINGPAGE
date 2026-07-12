@@ -244,4 +244,40 @@
     flex-wrap: wrap;
   }
 
+  .div-service-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .div-service-container h2 {
+    padding-bottom: 20px;
+    font-size: 60px;
+  }
+
+  .two-inside-service-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+  }
+
+  .two-inside-service-container div {
+    padding-top: 30px;
+    border-bottom: 1px solid #6B6B72;
+    padding-bottom: 30px;
+
+  }
+
+  .two-inside-service-container div:nth-child(3) {
+    border-bottom: none;
+  }
+
+
+
+
+
+
+
 }

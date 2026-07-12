@@ -176,11 +176,15 @@ const AboutPage = () => {
             <h2>Want to see how we work up close?</h2>
             <p>Talk to our team about a specific transformation challenge.</p>
           </div>
+        </div>
+      </div>
+
+      <div className='make-gud'>
+        <div className='about-maxwidth'>
           <div className='cta-buttons'>
             <button className='btn-primary'>Start a conversation</button>
             <button className='btn-outline'>See open roles</button>
           </div>
-
         </div>
       </div>
 
