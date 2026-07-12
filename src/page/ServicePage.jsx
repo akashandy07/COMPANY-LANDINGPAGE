@@ -16,8 +16,11 @@ const ServicePage = () => {
                     </div>
                 </div>
             </div>
+
+
+
             <div className='two-service-container'>
-                <div className='index-maxwidth'>
+                <div className='max-service-container'>
                     <div className='fourth-container-sub'>
                         <div>
                             <p>01</p>

@@ -1,14 +1,35 @@
+.fotter-container {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: #FFFFFF;
+}
+
+.max-width-fotter {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
 .first-fotter {
     display: flex;
     gap: 215px;
     padding-top: 50px;
     align-items: center;
-
 }
 
-.max-width-fotter {
-    max-width: 1280px;
-    margin: 0 auto;
+.first-fotter h2 {
+    padding-bottom: 20px;
+}
+
+.first-fotter p {
+    padding-top: 10px;
+}
+
+.footerlogo {
+    width: 400px;
+    height: auto;
 }
 
 .sub-footerpage {
@@ -19,46 +40,36 @@
     padding-bottom: 30px;
 }
 
-.first-fotter p {
-    padding-top: 10px;
+.sub-footerpage div {
+    display: flex;
+    flex-direction: column;
 }
 
-
-
-.fotter-container {
-    width: 100%;
-    height: auto;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    background-color: #FFFFFF;
+.sub-footerpage h4 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: gray;
+    padding-bottom: 16px;
 }
 
-.footerlogo {
-    width: 400px;
-    height: auto;
-
-
+.sub-footerpage a {
+    font-size: 14px;
+    color: #0D0D0F;
+    text-decoration: none;
+    padding: 6px 0;
 }
 
-.first-fotter h2 {
-    padding-bottom: 20px;
-}
-
-.sub-footerpage h1 {
-    padding-bottom: 10px;
+.sub-footerpage a:hover {
+    color: #5B00C9;
 }
 
 .down-footer {
     height: 65px;
     width: 100%;
     padding-top: 20px;
-    padding-bottom:20px ;
-}
-
-.final-footer div {
-
-    display: flex;
-
+    padding-bottom: 20px;
 }
 
 .final-footer {
@@ -67,12 +78,13 @@
     align-items: center;
 }
 
+.final-footer p {
+    font-size: 13px;
+    color: gray;
+}
 
-/* ===========================
-   Tablet (1024px)
-=========================== */
+/* Tablet */
 @media (max-width: 1024px) {
-
     .max-width-fotter {
         padding: 0 20px;
     }
@@ -92,12 +104,8 @@
     }
 }
 
-
-/* ===========================
-   Mobile (768px)
-=========================== */
+/* Mobile */
 @media (max-width: 768px) {
-
     .first-fotter {
         flex-direction: column;
         gap: 40px;
@@ -129,16 +137,17 @@
         text-align: center;
     }
 
-    .final-footer h1 {
+    .final-footer p {
         font-size: 14px;
     }
 }
 
-
-/* ===========================
-   Small Mobile (480px)
-=========================== */
+/* Small mobile */
 @media (max-width: 480px) {
+    .max-width-fotter {
+        max-width: 350px;
+        margin: 0px auto;
+    }
 
     .sub-footerpage {
         grid-template-columns: 1fr;
@@ -154,14 +163,13 @@
         line-height: 24px;
     }
 
-    .sub-footerpage h1,
-    .sub-footerpage h2 {
-        font-size: 16px;
+    .sub-footerpage h4,
+    .sub-footerpage a {
+        font-size: 14px;
     }
 
-    .final-footer h1 {
+    .final-footer p {
         font-size: 13px;
         line-height: 20px;
     }
 }
-

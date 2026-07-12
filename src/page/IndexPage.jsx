@@ -13,6 +13,7 @@ const IndexPage = () => {
     <>
       <div className="index-container">
         <div className="index-maxwidth">
+          
           <div className='index-logo'>
             <h1>--- Global Technology & Strategy Consulting</h1>
           </div>

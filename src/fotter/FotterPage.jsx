@@ -13,30 +13,30 @@ const FotterPage = () => {
                         </div>
                         <div className='sub-footerpage'>
                             <div>
-                                <h1>Services</h1>
-                                <h2>Strategy</h2>
-                                <h2>Cloud</h2>
-                                <h2>Applied AI</h2>
-                                <h2>Security</h2>
+                                <h4>Services</h4>
+                                <a href='/services'>Strategy</a>
+                                <a href='/services'>Cloud</a>
+                                <a href='/services'>Applied AI</a>
+                                <a href='/services'>Security</a>
                             </div>
                             <div>
-                                <h1>Company</h1>
-                                <h1>About</h1>
-                                <h1>Newsroom</h1>
-                                <h1>Careers</h1>
-                                <h1>Investors</h1>
+                                <h4>Company</h4>
+                                <a href='/about'>About</a>
+                                <a href='/insights'>Newsroom</a>
+                                <a href='/careers'>Careers</a>
+                                <a href='/about'>Investors</a>
                             </div>
                             <div>
-                                <h2>Insights</h2>
-                                <h1>Research</h1>
-                                <h1>Reports</h1>
-                                <h1>Podcasts</h1>
+                                <h4>Insights</h4>
+                                <a href='/insights'>Research</a>
+                                <a href='/insights'>Reports</a>
+                                <a href='/insights'>Podcasts</a>
                             </div>
                             <div>
-                                <h2>Connect</h2>
-                                <h1>LinkedIn</h1>
-                                <h1>Contact us</h1>
-                                <h1>Find an office</h1>
+                                <h4>Connect</h4>
+                                <a href='#'>LinkedIn</a>
+                                <a href='/contact'>Contact us</a>
+                                <a href='/contact'>Find an office</a>
                             </div>
                         </div>
                     </div>
@@ -47,16 +47,14 @@ const FotterPage = () => {
                 <div className='max-width-fotter'>
                     <div className='final-footer'>
                         <div>
-                            <h1>© 2026 Aurion Global, Inc. </h1>
+                            <p>© 2026 Aurion Global, Inc.</p>
                         </div>
                         <div>
-                            <h1>Privacy · Terms · Cookie settings</h1>
+                            <p>Privacy · Terms · Cookie settings</p>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </>
     )
 }

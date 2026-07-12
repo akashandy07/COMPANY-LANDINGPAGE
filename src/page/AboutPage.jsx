@@ -175,11 +175,12 @@ const AboutPage = () => {
           <div className='cta-content'>
             <h2>Want to see how we work up close?</h2>
             <p>Talk to our team about a specific transformation challenge.</p>
-            <div className='cta-buttons'>
-              <button className='btn-primary'>Start a conversation</button>
-              <button className='btn-outline'>See open roles</button>
-            </div>
           </div>
+          <div className='cta-buttons'>
+            <button className='btn-primary'>Start a conversation</button>
+            <button className='btn-outline'>See open roles</button>
+          </div>
+
         </div>
       </div>
 

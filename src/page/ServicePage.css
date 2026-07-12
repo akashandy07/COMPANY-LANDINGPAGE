@@ -233,21 +233,15 @@
 }
 
 @media (max-width: 480px) {
-  .sub-service-container h1 {
-    font-size: 32px;
+  .max-service-container {
+    max-width: 350px;
+    margin: 0px auto;
   }
 
-  .div-service-container h2 {
-    font-size: 28px;
+  .fourth-container-sub {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  .four-service-container h1 {
-    font-size: 28px;
-  }
-
-  .sub-service-container p,
-  .div-service-container p,
-  .two-inside-service-container p {
-    font-size: 14px;
-  }
 }

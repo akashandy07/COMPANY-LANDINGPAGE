@@ -223,6 +223,14 @@
 
 /* ========== RESPONSIVE - MOBILE (max-width: 480px) ========== */
 @media (max-width: 480px) {
+    .max-width-InsightPage {
+        max-width: 350px;
+        margin: 0px auto;
+    }
+    .InsightPage-container{
+        padding-top: 50px;
+    }
+
     .headind-InsightPage-container {
         padding-top: 90px;
     }
