@@ -207,82 +207,369 @@
   border-color: var(--violet);
 }
 
+
+
+
 /* Responsive Media Queries */
-@media (max-width: 1024px) {
-  .sub-service-container h1 {
-    font-size: 56px;
+
+/* ============================================
+   1400px+ — Large desktop / wide monitors
+   ============================================ */
+@media (min-width: 1400px) {
+  .max-service-container {
+    max-width: 1320px;
+  }
+
+  .service-container {
+    padding-top: 200px;
+  }
+
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 70px;
   }
 
   .four-service-container h1 {
-    font-size: 44px;
+    font-size: 56px;
+  }
+
+  .div-service-container h2 {
+    font-size: 46px;
   }
 }
 
-@media (max-width: 768px) {
+/* ============================================
+   1200px — Standard desktop
+   ============================================ */
+@media (max-width: 1200px) {
   .max-service-container {
-    max-width: 350px;
-    margin: 0px auto;
+    max-width: 960px;
   }
 
-  .sub-service-container h1 {
-    font-size: 48px;
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 62px;
+  }
+
+  .four-service-container h1 {
+    font-size: 50px;
+  }
+
+  .div-service-container h2 {
+    font-size: 42px;
+  }
+}
+
+/* ============================================
+   992px — Small laptop
+   ============================================ */
+@media (max-width: 992px) {
+  .max-service-container {
+    max-width: 100%;
+  }
+
+  .service-container {
+    padding-top: 140px;
+    padding-bottom: 70px;
+  }
+
+  .two-service-container,
+  .three-service-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .fourth-container-sub {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .div-service-container {
+    align-items: flex-start;
+  }
+
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 54px;
+  }
+
+  .four-service-container h1 {
+    font-size: 42px;
   }
 
   .div-service-container h2 {
     font-size: 38px;
   }
 
-  .four-service-container h1 {
-    font-size: 36px;
+  .sub-service-container p,
+  .four-service-container p {
+    font-size: 15.5px;
   }
 }
 
-@media (max-width: 480px) {
+/* ============================================
+   768px — Tablet
+   ============================================ */
+@media (max-width: 768px) {
   .max-service-container {
-    max-width: 370px;
-    margin: 0px auto;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service-container {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .two-service-container,
+  .three-service-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .fourth-container-sub {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
   }
 
   .div-service-container {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .div-service-container h2 {
-    padding-bottom: 20px;
-    font-size: 60px;
+    gap: 16px;
   }
 
   .two-inside-service-container {
-    padding-top: 30px;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
-
+    align-items: stretch;
+    padding-top: 50px;
+    gap: 28px;
   }
 
-  .two-inside-service-container div {
-    padding-top: 30px;
-    border-bottom: 1px solid #6B6B72;
-    padding-bottom: 30px;
-
+  .two-inside-service-container>div {
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--gray-line);
   }
 
-  .two-inside-service-container div:nth-child(3) {
+  .two-inside-service-container>div:last-child {
     border-bottom: none;
   }
 
+  .four-service-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 44px;
+  }
 
+  .four-service-container h1 {
+    font-size: 34px;
+  }
 
+  .div-service-container h2 {
+    font-size: 32px;
+  }
 
+  .sub-service-container p,
+  .four-service-container p {
+    font-size: 15px;
+  }
 
+  .two-inside-service-container h1 {
+    font-size: 17px;
+  }
 
+  .two-inside-service-container p {
+    font-size: 13.5px;
+  }
+}
+
+/* ============================================
+   576px — Large phones
+   ============================================ */
+@media (max-width: 576px) {
+  .service-container {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+
+  .max-service-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .fourth-container-sub {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sub-service-container p br,
+  .div-service-container p br,
+  .two-inside-service-container p br {
+    display: none;
+  }
+
+  .four-service-container button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 36px;
+  }
+
+  .four-service-container h1 {
+    font-size: 28px;
+  }
+
+  .div-service-container h2 {
+    font-size: 28px;
+  }
+
+  .sub-service-container p,
+  .four-service-container p {
+    font-size: 14px;
+  }
+}
+
+/* ============================================
+   425px — Small phones
+   ============================================ */
+@media (max-width: 425px) {
+  .service-container {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .two-service-container,
+  .three-service-container,
+  .four-service-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .max-service-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .fourth-container-sub {
+    gap: 20px;
+  }
+
+  .two-inside-service-container {
+    padding-top: 36px;
+    gap: 20px;
+  }
+
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 32px;
+  }
+
+  .four-service-container h1 {
+    font-size: 26px;
+  }
+
+  .div-service-container h2 {
+    font-size: 25px;
+  }
+
+  .sub-service-container p,
+  .four-service-container p {
+    font-size: 13.5px;
+  }
+}
+
+/* ============================================
+   375px — iPhone SE / standard mobile
+   ============================================ */
+@media (max-width: 375px) {
+  .max-service-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .four-service-container button {
+    padding: 10px 18px;
+  }
+
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 29px;
+    letter-spacing: -0.01em;
+  }
+
+  .four-service-container h1 {
+    font-size: 24px;
+  }
+
+  .div-service-container h2 {
+    font-size: 23px;
+  }
+
+  .sub-service-container p,
+  .four-service-container p {
+    font-size: 13px;
+  }
+}
+
+/* ============================================
+   320px — Smallest common mobile
+   ============================================ */
+@media (max-width: 320px) {
+  .service-container {
+    padding-top: 90px;
+    padding-bottom: 32px;
+  }
+
+  .max-service-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .two-service-container,
+  .three-service-container,
+  .four-service-container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .fourth-container-sub {
+    gap: 16px;
+  }
+
+  .four-service-container button {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .two-inside-service-container>div {
+    padding-bottom: 20px;
+  }
+
+  .sub-service-container h1,
+  .sub-service-container span {
+    font-size: 26px;
+  }
+
+  .four-service-container h1 {
+    font-size: 21px;
+  }
+
+  .div-service-container h2 {
+    font-size: 20px;
+  }
+
+  .sub-service-container p,
+  .four-service-container p {
+    font-size: 12.5px;
+  }
 }
