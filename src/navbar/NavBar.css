@@ -8,6 +8,7 @@
     bottom: 0px;
     z-index: 9999;
 
+
 }
 
 .nav-bar-content {
@@ -103,7 +104,15 @@
    Tablet & Mobile
 ========================== */
 
+/* ==========================
+   Tablet & Mobile
+========================== */
+
 @media (max-width: 768px) {
+
+    .navbar {
+        height: 70px;
+    }
 
     .nav-bar-content {
         padding: 0 20px;
@@ -111,12 +120,17 @@
 
     .navbar-inner {
         align-items: center;
-        height: 95px;
+        height: 70px;
     }
 
     .menu-icon {
         display: block;
+        font-size: 24px;
         z-index: 10001;
+    }
+
+    .logo-text {
+        font-size: 24px;
     }
 
     .desktop-btn {
@@ -132,7 +146,7 @@
 
     .nav-links {
         position: absolute;
-        top: 95px;
+        top: 70px;
         left: -200%;
         width: 100%;
         background: #fff;
@@ -166,5 +180,69 @@
     .nav-bar-content {
         max-width: 370px;
         margin: 0px auto;
+    }
+}
+
+/* ==========================
+   Small phones
+========================== */
+
+@media (max-width: 425px) {
+
+    .navbar {
+        height: 62px;
+    }
+
+    .navbar-inner {
+        height: 62px;
+    }
+
+    .logo-text {
+        font-size: 21px;
+    }
+
+    .menu-icon {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        top: 62px;
+    }
+
+    .nav-bar-content {
+        max-width: 370px;
+        padding: 0 16px;
+    }
+}
+
+/* ==========================
+   Smallest phones
+========================== */
+
+@media (max-width: 320px) {
+
+    .navbar {
+        height: 56px;
+    }
+
+    .navbar-inner {
+        height: 56px;
+    }
+
+    .logo-text {
+        font-size: 19px;
+    }
+
+    .menu-icon {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        top: 56px;
+    }
+
+    .nav-bar-content {
+        max-width: 300px;
+        padding: 0 12px;
     }
 }
