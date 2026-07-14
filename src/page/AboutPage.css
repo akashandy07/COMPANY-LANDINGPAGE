@@ -95,6 +95,9 @@
 /* ============================================
    1400px+ — Large desktop / wide monitors
    ============================================ */
+/* ============================================
+   1400px+ — Large desktop / wide monitors
+   ============================================ */
 @media (min-width: 1400px) {
     .about-maxwidth {
         max-width: 1320px;
@@ -104,12 +107,22 @@
         padding-top: 190px;
     }
 
+    .about-hero-heading h1 {
+        color: #0d0d0f;
+    }
+
+    .about-hero-subheading p {
+        color: #6b6b72;
+    }
+
     .stat-item h2 {
         font-size: 42px;
+        color: #0d0d0f;
     }
 
     .tl-year {
         font-size: 22px;
+        color: #5b00c9;
     }
 }
 
@@ -127,10 +140,12 @@
 
     .stat-item h2 {
         font-size: 34px;
+        color: #0d0d0f;
     }
 
     .value-card h3 {
         font-size: 17px;
+        color: #0d0d0f;
     }
 }
 
@@ -147,8 +162,13 @@
         padding: 150px 0 56px;
     }
 
+    .about-hero-heading h1 {
+        color: #0d0d0f;
+    }
+
     .about-hero-subheading p {
         font-size: 16.5px;
+        color: #6b6b72;
     }
 
     .stats-grid {
@@ -165,10 +185,12 @@
 
     .stat-item h2 {
         font-size: 30px;
+        color: #0d0d0f;
     }
 
     .stat-item p {
         font-size: 13px;
+        color: #6b6b72;
     }
 
     .values-container,
@@ -177,16 +199,24 @@
         padding: 90px 0;
     }
 
+    .values-header h2,
+    .timeline-header h2,
+    .leadership-header h2 {
+        color: #0d0d0f;
+    }
+
     .values-grid {
         grid-template-columns: 1fr 1fr;
     }
 
     .value-card h3 {
         font-size: 16.5px;
+        color: #0d0d0f;
     }
 
     .value-card p {
         font-size: 13.5px;
+        color: #6b6b72;
     }
 
     .lead-grid {
@@ -195,10 +225,12 @@
 
     .tl-year {
         font-size: 18px;
+        color: #5b00c9;
     }
 
     .tl-content h4 {
         font-size: 15px;
+        color: #0d0d0f;
     }
 }
 
@@ -218,10 +250,16 @@
 
     .about-eyebrow {
         font-size: 12px;
+        color: #5b00c9;
+    }
+
+    .about-hero-heading h1 {
+        color: #0d0d0f;
     }
 
     .about-hero-subheading p {
         font-size: 15.5px;
+        color: #6b6b72;
     }
 
     .stats-grid {
@@ -234,14 +272,17 @@
 
     .stat-item h2 {
         font-size: 28px;
+        color: #0d0d0f;
     }
 
     .stat-item h2 span {
         font-size: 18px;
+        color: #5b00c9;
     }
 
     .stat-item p {
         font-size: 12.5px;
+        color: #6b6b72;
     }
 
     .values-container,
@@ -257,10 +298,17 @@
         align-items: flex-start;
     }
 
+    .values-header h2,
+    .timeline-header h2,
+    .leadership-header h2 {
+        color: #0d0d0f;
+    }
+
     .values-subtitle,
     .timeline-subtitle,
     .leadership-subtitle {
         font-size: 14.5px;
+        color: #6b6b72;
     }
 
     .values-grid {
@@ -270,10 +318,12 @@
 
     .value-card h3 {
         font-size: 16px;
+        color: #0d0d0f;
     }
 
     .value-card p {
         font-size: 13px;
+        color: #6b6b72;
     }
 
     .tl-row {
@@ -284,14 +334,17 @@
 
     .tl-year {
         font-size: 16px;
+        color: #5b00c9;
     }
 
     .tl-content h4 {
         font-size: 14.5px;
+        color: #0d0d0f;
     }
 
     .tl-content p {
         font-size: 13px;
+        color: #6b6b72;
     }
 
     .lead-grid {
@@ -301,14 +354,21 @@
 
     .lead-card h4 {
         font-size: 14.5px;
+        color: #0d0d0f;
     }
 
     .lead-card p {
         font-size: 12px;
+        color: #6b6b72;
+    }
+
+    .cta-content h2 {
+        color: #0d0d0f;
     }
 
     .cta-content p {
         font-size: 15px;
+        color: #6b6b72;
     }
 
     .cta-buttons .btn-primary,
@@ -332,10 +392,16 @@
 
     .about-eyebrow {
         font-size: 11.5px;
+        color: #5b00c9;
+    }
+
+    .about-hero-heading h1 {
+        color: #0d0d0f;
     }
 
     .about-hero-subheading p {
         font-size: 14.5px;
+        color: #6b6b72;
     }
 
     .stats-grid {
@@ -355,6 +421,7 @@
 
     .stat-item h2 {
         font-size: 26px;
+        color: #0d0d0f;
     }
 
     .values-container div {
@@ -373,6 +440,7 @@
 
     .value-card h3 {
         font-size: 15.5px;
+        color: #0d0d0f;
     }
 
     .lead-grid {
@@ -382,10 +450,12 @@
 
     .cta-content h2 {
         font-size: 26px;
+        color: #0d0d0f;
     }
 
     .cta-content p {
         font-size: 14px;
+        color: #6b6b72;
     }
 
     .cta-buttons {
@@ -411,15 +481,18 @@
 
     .about-hero-heading h1 {
         font-size: 34px;
+        color: #0d0d0f;
     }
 
     .about-hero-subheading p {
         font-size: 14px;
+        color: #6b6b72;
     }
 
     .stat-item h2 {
         font-size: 24px;
         padding-top: 40px;
+        color: #0d0d0f;
     }
 
     .stats-grid .stat-item {
@@ -435,6 +508,7 @@
 
     .value-card h3 {
         font-size: 15px;
+        color: #0d0d0f;
     }
 
     .values-grid div {
@@ -444,10 +518,12 @@
 
     .tl-year {
         font-size: 15px;
+        color: #5b00c9;
     }
 
     .tl-content h4 {
         font-size: 14px;
+        color: #0d0d0f;
     }
 
     .lead-grid {
@@ -456,10 +532,12 @@
 
     .lead-card h4 {
         font-size: 14px;
+        color: #0d0d0f;
     }
 
     .cta-content h2 {
         font-size: 23px;
+        color: #0d0d0f;
     }
 
     .cta-buttons .btn-primary {
@@ -483,38 +561,47 @@
 
     .about-hero-heading h1 {
         font-size: 30px;
+        color: #0d0d0f;
     }
 
     .about-hero-subheading p {
         font-size: 13.5px;
+        color: #6b6b72;
     }
 
     .stat-item h2 {
         font-size: 21px;
+        color: #0d0d0f;
     }
 
     .stat-item p {
         font-size: 12px;
+        color: #6b6b72;
     }
 
     .value-card h3 {
         font-size: 14.5px;
+        color: #0d0d0f;
     }
 
     .value-card p {
         font-size: 12.5px;
+        color: #6b6b72;
     }
 
     .tl-year {
         font-size: 14px;
+        color: #5b00c9;
     }
 
     .tl-content h4 {
         font-size: 13.5px;
+        color: #0d0d0f;
     }
 
     .tl-content p {
         font-size: 12.5px;
+        color: #6b6b72;
     }
 
     .lead-grid {
@@ -524,14 +611,17 @@
 
     .lead-card h4 {
         font-size: 13px;
+        color: #0d0d0f;
     }
 
     .cta-content h2 {
         font-size: 21px;
+        color: #0d0d0f;
     }
 
     .cta-content p {
         font-size: 13px;
+        color: #6b6b72;
     }
 }
 
@@ -549,26 +639,32 @@
 
     .about-hero-heading h1 {
         font-size: 26px;
+        color: #0d0d0f;
     }
 
     .about-hero-subheading p {
         font-size: 13px;
+        color: #6b6b72;
     }
 
     .stat-item h2 {
         font-size: 19px;
+        color: #0d0d0f;
     }
 
     .stat-item p {
         font-size: 11.5px;
+        color: #6b6b72;
     }
 
     .value-card h3 {
         font-size: 14px;
+        color: #0d0d0f;
     }
 
     .value-card p {
         font-size: 12px;
+        color: #6b6b72;
     }
 
     .tl-row {
@@ -578,10 +674,12 @@
 
     .tl-year {
         font-size: 13px;
+        color: #5b00c9;
     }
 
     .tl-content h4 {
         font-size: 13px;
+        color: #0d0d0f;
     }
 
     .lead-grid {
@@ -590,6 +688,7 @@
 
     .cta-content h2 {
         font-size: 19px;
+        color: #0d0d0f;
     }
 
     .cta-buttons .btn-primary {
