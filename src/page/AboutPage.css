@@ -816,6 +816,7 @@
 @media (max-width: 375px) {
     .about-maxwidth {
         max-width: 340px;
+        margin: 0px auto;
     }
 
     .about-hero-heading h1 {

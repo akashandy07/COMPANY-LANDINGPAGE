@@ -165,32 +165,12 @@
 .last-container button:hover {
     background-color: #5B00C9;
 }
-.button-content{
+
+.button-content {
     padding-bottom: 70px;
 }
 
-/* ========== RESPONSIVE - TABLET (max-width: 768px) ========== */
-/* ============================================
-   1400px+ — Large desktop / wide monitors
-   ============================================ */
-@media (min-width: 1400px) {
-    .max-width-InsightPage {
-        max-width: 1320px;
-    }
 
-    .headind-InsightPage-container {
-        padding-top: 220px;
-    }
-
-    .headind-InsightPage-container p,
-    .headind-InsightPage-container span {
-        font-size: 68px;
-    }
-
-    .last-container h1 {
-        font-size: 58px;
-    }
-}
 
 /* ============================================
    1200px — Standard desktop
@@ -491,15 +471,11 @@
 
     .last-container {
         border-top: 1px solid #E6E3EC;
-
+        padding-top: 14px;
     }
 
     .full-container {
         padding-bottom: 30px;
-    }
-
-    .last-container {
-        padding-top: 14px;
     }
 
     .headind-InsightPage-container p,

@@ -627,37 +627,6 @@
     color: #6B6B72;
 }
 
-/* ========== RESPONSIVE - TABLET (max-width: 768px) ========== */
-/* ============================================
-   1400px+ — Large desktop / wide monitors
-   ============================================ */
-@media (min-width: 1400px) {
-    .max-CarrerPage-container {
-        max-width: 1320px;
-    }
-
-    .CarrerPage-container {
-        padding-top: 200px;
-    }
-
-    .sub-CarrerPage-container p {
-        font-size: 70px;
-        line-height: 72px;
-    }
-
-    .third-CarrerPage-container-content p {
-        font-size: 50px;
-    }
-
-    .full-subbb-content-sixth-container p {
-        font-size: 50px;
-    }
-
-    .final-div-in-carrer h1 {
-        font-size: 60px;
-    }
-}
-
 /* ============================================
    1200px — Standard desktop
    ============================================ */
@@ -1095,7 +1064,6 @@
         font-size: 28px;
         line-height: 30px;
         padding-top: 4px;
-
     }
 
     .search-container {
@@ -1110,11 +1078,8 @@
         border-top: 1px solid #D1D5DB;
     }
 
-
-
     .sub-CarrerPage-container h2 br {
         font-size: 13.5px;
-
         display: none;
     }
 
