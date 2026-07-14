@@ -999,12 +999,21 @@
     }
 
     .sub-CarrerPage-container p {
-        font-size: 29px;
-        line-height: 34px;
+        font-size: 35px;
+        line-height: 40px;
+
+        br {
+            display: none;
+        }
     }
 
     .sub-CarrerPage-container h2 {
         font-size: 14px;
+        padding-top: 1px;
+
+        br {
+            display: none;
+        }
     }
 
     .box-CarrerPage-container h1 {
@@ -1149,7 +1158,7 @@
 
     .filter-group {
         padding-top: 10px;
-        
+
     }
 
     .search-fixed {

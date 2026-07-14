@@ -789,6 +789,15 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .timeline:nth-child(5) {
+        border-bottom: none;
+    }
+
+    .tl-row:nth-child(5) {
+        border-bottom: none;
+    }
+
+
 
 
     .lead-card h4 {

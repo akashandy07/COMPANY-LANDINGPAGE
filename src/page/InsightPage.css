@@ -385,12 +385,10 @@
     }
 
     .InsightPage-container {
-        padding-top: 90px;
+        padding-top: 6px;
     }
 
-    .headind-InsightPage-container {
-        padding-top: 90px;
-    }
+    
 
     .headind-InsightPage-container h1 {
         font-size: 13px;
@@ -398,9 +396,12 @@
 
     .headind-InsightPage-container p,
     .headind-InsightPage-container span {
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 40px;
         letter-spacing: 0.5px;
+        br{
+            display: none;
+        }
     }
 
     .headind-InsightPage-container h2 {

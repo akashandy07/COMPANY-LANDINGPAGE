@@ -888,12 +888,12 @@
     }
 
     .index-container {
-        padding-top: 90px;
+        padding-top: 0px;
     }
 
-    .index-logo {
+    /* .index-logo {
         padding-top: 80px;
-    }
+    } */
 
     .index-logo h1 {
         font-size: 14px;
@@ -1066,7 +1066,7 @@
 
     .fourth-container-sub div p br {
         display: none;
-        
+        /* line-height: 20px; */
 
     }
 
