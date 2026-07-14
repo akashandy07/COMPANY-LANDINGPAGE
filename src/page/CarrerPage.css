@@ -742,7 +742,7 @@
 /* ========== RESPONSIVE - MOBILE (max-width: 480px) ========== */
 @media (max-width: 480px) {
     .max-CarrerPage-container {
-        max-width: 350px;
+        max-width: 370px;
         margin: 0px auto;
     }
 
