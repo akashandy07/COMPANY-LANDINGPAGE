@@ -340,6 +340,11 @@
         letter-spacing: 0.6px;
     }
 
+    .headind-InsightPage-container h2 br {
+        display: none;
+    }
+
+
     .headind-InsightPage-container h2 {
         font-size: 14.5px;
         padding-bottom: 40px;
@@ -452,6 +457,7 @@
     .max-width-InsightPage {
         max-width: 340px;
     }
+
     .InsightPage-container {
         padding-top: 90px;
     }

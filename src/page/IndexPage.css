@@ -741,7 +741,7 @@
     }
 
     .index-container {
-        padding-top: 90px;
+        padding-top: 150px;
     }
 
     .index-logo {
@@ -884,6 +884,7 @@
     .index-maxwidth {
         max-width: 370px;
         margin: 0px auto;
+        padding: 0;
     }
 
     .index-container {
@@ -988,9 +989,7 @@
         padding-top: 70px;
     }
 
-    .index-container {
-        padding-top: 90px;
-    }
+
 
     .index-maxwidth {
         max-width: 340px;

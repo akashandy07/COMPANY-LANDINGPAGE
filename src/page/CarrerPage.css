@@ -991,7 +991,7 @@
     }
 
     .CarrerPage-container {
-        padding-top: 140px;
+        padding-top: 85px;
     }
 
     .sub-CarrerPage-container h1 {
@@ -1049,7 +1049,7 @@
    ============================================ */
 @media (max-width: 375px) {
     .CarrerPage-container {
-        padding-top: 90px;
+        padding-top: 85px;
     }
 
     .max-CarrerPage-container {
@@ -1140,7 +1140,7 @@
     }
 
     .CarrerPage-container {
-        padding-top: 120px;
+        padding-top: 90px;
     }
 
     .sub-CarrerPage-container h1 {
