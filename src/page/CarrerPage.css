@@ -732,6 +732,11 @@
         font-size: 38px;
         line-height: 44px;
     }
+
+    .max-CarrerPage-container {
+        max-width: 350px;
+        margin: 0px auto;
+    }
 }
 
 /* ========== RESPONSIVE - MOBILE (max-width: 480px) ========== */

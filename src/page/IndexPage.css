@@ -612,6 +612,11 @@
     .siventh-btn {
         flex-wrap: wrap;
     }
+
+    .index-maxwidth {
+        max-width: 350px;
+        margin: 0px auto;
+    }
 }
 
 /* ===== Mobile (480px) ===== */
@@ -632,7 +637,7 @@
 
     .index-logo h1 {
         font-size: 13px;
-         line-height: 38px;
+        line-height: 38px;
     }
 
 

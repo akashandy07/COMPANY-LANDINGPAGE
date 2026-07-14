@@ -219,6 +219,11 @@
     .last-container p {
         font-size: 15px;
     }
+
+    .max-width-InsightPage {
+        max-width: 350px;
+        margin: 0px auto;
+    }
 }
 
 /* ========== RESPONSIVE - MOBILE (max-width: 480px) ========== */
@@ -227,7 +232,8 @@
         max-width: 350px;
         margin: 0px auto;
     }
-    .InsightPage-container{
+
+    .InsightPage-container {
         padding-top: 50px;
     }
 

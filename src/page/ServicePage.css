@@ -219,6 +219,11 @@
 }
 
 @media (max-width: 768px) {
+  .max-service-container {
+    max-width: 350px;
+    margin: 0px auto;
+  }
+
   .sub-service-container h1 {
     font-size: 48px;
   }

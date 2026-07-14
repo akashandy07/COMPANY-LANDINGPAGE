@@ -427,6 +427,11 @@
         gap: 16px;
         padding: 20px 0;
     }
+
+    .about-maxwidth {
+        max-width: 350px;
+        margin: 0px auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -480,7 +485,7 @@
         width: 100%;
         padding: 3px 10px;
         font-size: 20px;
-        
+
     }
 
     .cta-buttons .btn-outline {
