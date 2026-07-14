@@ -1,8 +1,10 @@
 import React from 'react'
 import './ContactPage.css'
 import FotterPage from '../fotter/FotterPage'
+import { useNavigate } from 'react-router-dom'
 
 const ContactPage = () => {
+  const navigate = useNavigate()
   return (
     <>
       {/* Hero Section */}
@@ -60,7 +62,16 @@ const ContactPage = () => {
                 <textarea id='message' placeholder="A few sentences on the problem you're facing"></textarea>
               </div>
 
-              <button className='contact-end-btn' type='button'>Send message</button>
+              <button
+                onClick={() => {
+                  alert('Your Message Sent Successfully');
+                  navigate("/");
+                }}
+                className='contact-end-btn'
+                type='button'
+              >
+                Send message
+              </button>
             </div>
 
             {/* Right — Contact Info */}
@@ -93,10 +104,10 @@ const ContactPage = () => {
 
           </div>
         </div>
-      </div>
+      </div >
 
       {/* Offices Section */}
-      <div className='offices-container'>
+      < div className='offices-container' >
         <div className='contact-maxwidth'>
           <div className='offices-header'>
             <div>
@@ -116,7 +127,7 @@ const ContactPage = () => {
             <div className='office-item'><h4>Tokyo</h4><p>East Asia</p></div>
           </div>
         </div>
-      </div>
+      </div >
 
       <FotterPage />
     </>

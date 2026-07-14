@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import FotterPage from '../fotter/FotterPage'
 
 const CarrerPage = () => {
+
   const {
     input, setInput,
     checkRole, handleCheckRole, roleCategories,
@@ -232,7 +233,7 @@ const CarrerPage = () => {
           <div className='sub-final-div-in-carrer'>
             <h1>Don't see the right role?</h1>
             <p>Send us your resume anyway — we hire ahead of need across most practices.</p>
-            <button>Get in touch</button>
+            <button onClick={() => navigate("/contact")}>Get in touch</button>
           </div>
         </div>
       </div>

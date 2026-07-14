@@ -114,7 +114,7 @@
 
 /* Two Inside Service Container */
 .two-inside-service-container {
-  padding-top: 80px;
+  padding-top: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,6 +206,7 @@
   background-color: var(--violet);
   border-color: var(--violet);
 }
+
 
 
 
@@ -517,6 +518,11 @@
   .sub-service-container p,
   .four-service-container p {
     font-size: 13px;
+  }
+
+  .two-inside-service-container div:nth-child(1) {
+    border-top: 1px solid #E5E7EB;
+    padding-top: 20px;
   }
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
 import './AboutPage.css'
 import FotterPage from '../fotter/FotterPage'
+import { useNavigate } from 'react-router-dom'
 
 const AboutPage = () => {
+  const navigate = useNavigate()
   return (
     <>
       {/* Hero Section */}
@@ -182,8 +184,8 @@ const AboutPage = () => {
       <div className='make-gud'>
         <div className='about-maxwidth'>
           <div className='cta-buttons'>
-            <button className='btn-primary'>Start a conversation</button>
-            <button className='btn-outline'>See open roles</button>
+            <button onClick={() => navigate("/contact")} className='btn-primary'>Start a conversation</button>
+            <button onClick={() => navigate("/carrer")} className='btn-outline'>See open roles</button>
           </div>
         </div>
       </div>

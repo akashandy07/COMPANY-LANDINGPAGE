@@ -5,6 +5,10 @@
 
 }
 
+.index-image {
+    padding-bottom: 60px;
+}
+
 .index-maxwidth {
     max-width: 1200px;
     margin: 0 auto;
@@ -12,7 +16,7 @@
 }
 
 .index-logo {
-    padding-top: 200px;
+    padding-top: 180px;
 }
 
 .index-logo h1 {
@@ -272,7 +276,7 @@
 }
 
 .fifth-container-heading {
-    padding-top: 120px;
+    padding-top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -419,7 +423,7 @@
 }
 
 .siventh-container {
-    padding-top: 130px;
+    padding-top: 110px;
 }
 
 .sub-siventh-container h1 {
@@ -476,200 +480,13 @@
 
 
 /* ===== Tablet (768px) ===== */
-/* ============================================
-   1400px+ — Large desktop / wide monitors
-   ============================================ */
-@media (min-width: 1400px) {
-    .index-maxwidth {
-        max-width: 1320px;
-    }
-
-    .index-logo {
-        padding-top: 220px;
-    }
-
-    .index-heading p {
-        font-size: 96px;
-        line-height: 88px;
-    }
-
-    .index-heading span {
-        font-size: 90px;
-        line-height: 88px;
-    }
-
-    .sub-siventh-container h1 {
-        font-size: 60px;
-    }
-
-    .sub-sixth-container p {
-        font-size: 50px;
-    }
-}
-
-/* ============================================
-   1200px — Standard desktop
-   ============================================ */
-@media (max-width: 1200px) {
-    .index-maxwidth {
-        max-width: 960px;
-    }
-
-    .index-heading p {
-        font-size: 72px;
-        line-height: 68px;
-    }
-
-    .index-heading span {
-        font-size: 66px;
-        line-height: 68px;
-    }
-
-    .child-third-container {
-        gap: 20%;
-    }
-
-    .child-third-container p {
-        font-size: 34px;
-        line-height: 42px;
-    }
-
-    .fourth-container-sub {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .fifth-container-heading p {
-        font-size: 38px;
-        line-height: 44px;
-    }
-
-    .sub-sixth-container p {
-        font-size: 40px;
-        line-height: 46px;
-    }
-
-    .sixth-container-box {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .sub-siventh-container h1 {
-        font-size: 46px;
-        line-height: 50px;
-    }
-}
-
-/* ============================================
-   992px — Small laptop
-   ============================================ */
-@media (max-width: 992px) {
-    .index-maxwidth {
-        max-width: 100%;
-        padding: 0 24px;
-    }
-
-    .index-logo {
-        padding-top: 150px;
-    }
-
-    .index-logo h1 {
-        font-size: 15px;
-    }
-
-    .index-heading p {
-        font-size: 58px;
-        line-height: 58px;
-    }
-
-    .index-heading span {
-        font-size: 54px;
-        line-height: 58px;
-    }
-
-    .index-subheading p {
-        font-size: 17px;
-        line-height: 25px;
-    }
-
-    .counter h1 {
-        font-size: 32px;
-    }
-
-    .counter p {
-        font-size: 13px;
-    }
-
-    .child-third-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .child-third-container p {
-        font-size: 30px;
-        line-height: 38px;
-    }
-
-    .fourth-container-sub {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
-    }
-
-    .fifth-container {
-        height: auto;
-    }
-
-    .fifth-container-heading p {
-        font-size: 34px;
-        line-height: 40px;
-    }
-
-    .sixth-container {
-        height: auto;
-    }
-
-    .sub-sixth-container p {
-        font-size: 34px;
-        line-height: 40px;
-    }
-
-    .sixth-container-box {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .sixth-container-box div:nth-child(4n) {
-        border-right: 1px solid #E6E3EC;
-    }
-
-    .sixth-container-box div:nth-child(3n) {
-        border-right: none;
-    }
-
-    .siventh-container {
-        height: auto;
-    }
-
-    .sub-siventh-container h1 {
-        font-size: 40px;
-        line-height: 46px;
-    }
-}
-
-/* ============================================
-   768px — Tablet
-   ============================================ */
 @media (max-width: 768px) {
     .index-maxwidth {
-        max-width: 350px;
-        margin: 0px auto;
-        padding: 0;
+        padding: 0 20px;
     }
 
     .index-logo {
         padding-top: 100px;
-    }
-
-    .index-logo h1 {
-        font-size: 14px;
     }
 
     .index-heading p {
@@ -686,10 +503,10 @@
     .index-subheading p {
         font-size: 16px;
         line-height: 24px;
-    }
 
-    .index-subheading p br {
-        display: none;
+        br {
+            display: none;
+        }
     }
 
     .btn {
@@ -704,14 +521,6 @@
         width: 50%;
         height: auto;
         padding: 40px 20px;
-    }
-
-    .counter h1 {
-        font-size: 28px;
-    }
-
-    .counter p {
-        font-size: 13px;
     }
 
     .nnnn {
@@ -732,31 +541,14 @@
         gap: 20px;
     }
 
-    .child-third-container h1 {
-        font-size: 12px;
-    }
-
     .child-third-container p {
         font-size: 32px;
         line-height: 40px;
     }
 
-    .child-third-container h3 {
-        font-size: 15px;
-        line-height: 21px;
-    }
-
     .fourth-container-sub {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
-    }
-
-    .fourth-container-sub h1 {
-        font-size: 20px;
-    }
-
-    .fourth-container-sub p {
-        font-size: 15px;
     }
 
     .fifth-container {
@@ -776,10 +568,6 @@
         line-height: 38px;
     }
 
-    .fifth-container-heading h1 {
-        font-size: 14px;
-    }
-
     .fifth-img {
         grid-template-columns: 1fr;
         row-gap: 20px;
@@ -795,10 +583,6 @@
         align-items: flex-start;
         gap: 20px;
         padding-top: 60px;
-    }
-
-    .sub-sixth-container h3 {
-        font-size: 12px;
     }
 
     .sub-sixth-container p {
@@ -818,10 +602,6 @@
         border-right: none;
     }
 
-    .sixth-container-box p {
-        font-size: 17px;
-    }
-
     .siventh-container {
         height: auto;
         padding-top: 60px;
@@ -833,153 +613,32 @@
         line-height: 44px;
     }
 
-    .sub-siventh-container p {
-        font-size: 15px;
-    }
-
     .siventh-btn {
         flex-wrap: wrap;
     }
-
-    .siventh-btn button {
-        font-size: 15px;
-    }
 }
 
-/* ============================================
-   576px — Large phones
-   ============================================ */
-@media (max-width: 576px) {
-    .index-maxwidth {
-        max-width: 100%;
-        padding: 0 18px;
-    }
-
-    .index-logo {
-        padding-top: 90px;
-    }
-
-    .index-logo h1 {
-        font-size: 13px;
-        line-height: 30px;
-    }
-
-    .index-heading p {
-        padding-top: 15px;
-        font-size: 36px;
-        line-height: 42px;
-    }
-
-    .index-heading span {
-        font-size: 33px;
-        line-height: 42px;
-    }
-
-    .index-subheading p {
-        font-size: 14.5px;
-        line-height: 22px;
-    }
-
-    .btn {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .btn button,
-    .btn .btnn {
-        width: 100%;
-    }
-
-    .counter div {
-        width: 50%;
-        padding: 30px 15px;
-    }
-
-    .counter h1 {
-        font-size: 24px;
-    }
-
-    .counter p {
-        font-size: 12.5px;
-    }
-
-    .child-third-container p {
-        font-size: 27px;
-        line-height: 35px;
-    }
-
-    .child-third-container h3 {
-        font-size: 14.5px;
-        line-height: 20px;
-    }
-
-    .child-third-container h3 br {
-        display: none;
-    }
-
-    .fourth-container-sub {
-        grid-template-columns: 1fr;
-    }
-
-    .fifth-container-heading p {
-        font-size: 27px;
-        line-height: 33px;
-    }
-
-    .fifth-container-heading p br {
-        display: none;
-    }
-
-    .sub-sixth-container p {
-        font-size: 27px;
-        line-height: 33px;
-    }
-
-    .sixth-container-box {
-        grid-template-columns: 1fr;
-    }
-
-    .sixth-container-box div:nth-child(2n) {
-        border-right: 1px solid #E6E3EC;
-    }
-
-    .sub-siventh-container h1 {
-        font-size: 29px;
-        line-height: 35px;
-    }
-
-    .sub-siventh-container p {
-        font-size: 14px;
-    }
-
-    .siventh-btn button {
-        width: 100%;
-        font-size: 14.5px;
-    }
-}
-
-/* ============================================
-   425px — Small phones
-   ============================================ */
-@media (max-width: 425px) {
+/* ===== Mobile (480px) ===== */
+@media (max-width: 480px) {
     .index-container {
-        padding-top: 60px;
+        padding-top: 100px;
     }
 
     .index-maxwidth {
-        max-width: 370px;
+        max-width: 350px;
         margin: 0px auto;
-        padding: 0;
     }
 
     .index-logo {
         padding-top: 70px;
+
     }
 
     .index-logo h1 {
         font-size: 13px;
-        line-height: 28px;
+        line-height: 38px;
     }
+
 
     .index-heading p {
         padding-top: 15px;
@@ -997,18 +656,26 @@
         line-height: 21px;
     }
 
-    .counter div {
+    .btn {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn button,
+    .btn .btnn {
         width: 100%;
     }
 
-    .counter h1 {
-        font-size: 22px;
+
+    .counter div {
+        width: 100%;
     }
 
     .nnnn,
     .counter div:nth-child(2n) {
         border-right: none;
         border-bottom: 1px solid #E6E3EC;
+
     }
 
     .child-third-container p {
@@ -1019,15 +686,27 @@
     .child-third-container h3 {
         font-size: 14px;
         line-height: 20px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .fourth-container-sub {
+        grid-template-columns: 1fr;
     }
 
     .fifth-container-heading p {
         font-size: 26px;
         line-height: 32px;
+
+        br {
+            display: none;
+        }
     }
 
-    .fifth-container-heading h2 {
-        font-size: 16px;
+    .sixth-container-box {
+        grid-template-columns: 1fr;
     }
 
     .sixth-container-box div:nth-child(2n) {
@@ -1043,6 +722,7 @@
         font-size: 14px;
     }
 
+
     .siventh-btn button {
         width: 100%;
     }
@@ -1055,158 +735,14 @@
     .fifth-img {
         padding-top: 13px;
     }
-}
 
-/* ============================================
-   375px — iPhone SE / standard mobile
-   ============================================ */
-@media (max-width: 375px) {
-    .index-maxwidth {
-        max-width: 340px;
-    }
+    /* .counter {
+        display: flex;
+        flex-direction: column;
+        
+    } */
 
-    .index-logo h1 {
-        font-size: 12px;
-        line-height: 24px;
-    }
 
-    .index-heading p {
-        font-size: 28px;
-        line-height: 34px;
-    }
 
-    .index-heading span {
-        font-size: 26px;
-        line-height: 34px;
-    }
 
-    .index-subheading p {
-        font-size: 13.5px;
-        line-height: 20px;
-    }
-
-    .counter h1 {
-        font-size: 20px;
-    }
-
-    .counter p {
-        font-size: 12px;
-    }
-
-    .child-third-container p {
-        font-size: 23px;
-        line-height: 30px;
-    }
-
-    .child-third-container h3 {
-        font-size: 13.5px;
-    }
-
-    .fourth-container-sub h1 {
-        font-size: 18px;
-    }
-
-    .fourth-container-sub p {
-        font-size: 14px;
-    }
-
-    .fifth-container-heading p {
-        font-size: 23px;
-        line-height: 29px;
-    }
-
-    .sub-sixth-container p {
-        font-size: 23px;
-        line-height: 29px;
-    }
-
-    .sub-siventh-container h1 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .sub-siventh-container p {
-        font-size: 13.5px;
-    }
-}
-
-/* ============================================
-   320px — Smallest common mobile
-   ============================================ */
-@media (max-width: 320px) {
-    .index-maxwidth {
-        max-width: 300px;
-    }
-
-    .index-logo {
-        padding-top: 60px;
-    }
-
-    .index-logo h1 {
-        font-size: 11.5px;
-        line-height: 22px;
-    }
-
-    .index-heading p {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .index-heading span {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    .index-subheading p {
-        font-size: 13px;
-        line-height: 19px;
-    }
-
-    .counter h1 {
-        font-size: 18px;
-    }
-
-    .counter p {
-        font-size: 11.5px;
-    }
-
-    .child-third-container p {
-        font-size: 20px;
-        line-height: 27px;
-    }
-
-    .child-third-container h3 {
-        font-size: 13px;
-    }
-
-    .fourth-container-sub h1 {
-        font-size: 16px;
-    }
-
-    .fourth-container-sub p {
-        font-size: 13px;
-    }
-
-    .fifth-container-heading p {
-        font-size: 20px;
-        line-height: 26px;
-    }
-
-    .sub-sixth-container p {
-        font-size: 20px;
-        line-height: 26px;
-    }
-
-    .sub-siventh-container h1 {
-        font-size: 21px;
-        line-height: 27px;
-    }
-
-    .sub-siventh-container p {
-        font-size: 13px;
-    }
-
-    .siventh-btn button {
-        font-size: 13px;
-    }
 }

@@ -1,14 +1,16 @@
 .navbar {
     width: 100%;
     height: 95px;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* ← must be transparent, not solid */
     border-bottom: 2px solid #E5E7EB;
     position: fixed;
     top: 0px;
     bottom: 0px;
     z-index: 9999;
-
-
+    backdrop-filter: blur(20px);
+    /* ← 400px was way too extreme, reduced to 20px */
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .nav-bar-content {
@@ -23,7 +25,7 @@
     padding: 10px 0px;
     position: relative;
     z-index: 9999;
-    /* width: 100%; */
+
 
 }
 
@@ -112,6 +114,9 @@
 
     .navbar {
         height: 70px;
+        backdrop-filter: blur(20px);
+        /* ← 400px was way too extreme, reduced to 20px */
+        -webkit-backdrop-filter: blur(20px);
     }
 
     .nav-bar-content {
@@ -191,6 +196,10 @@
 
     .navbar {
         height: 62px;
+        backdrop-filter: blur(20px);
+        /* ← 400px was way too extreme, reduced to 20px */
+        -webkit-backdrop-filter: blur(20px);
+
     }
 
     .navbar-inner {
@@ -223,6 +232,9 @@
 
     .navbar {
         height: 56px;
+        backdrop-filter: blur(20px);
+        /* ← 400px was way too extreme, reduced to 20px */
+        -webkit-backdrop-filter: blur(20px);
     }
 
     .navbar-inner {

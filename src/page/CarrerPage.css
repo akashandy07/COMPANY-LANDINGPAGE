@@ -1079,6 +1079,10 @@
    375px — iPhone SE / standard mobile
    ============================================ */
 @media (max-width: 375px) {
+    .CarrerPage-container {
+        padding-top: 90px;
+    }
+
     .max-CarrerPage-container {
         max-width: 340px;
     }
@@ -1088,12 +1092,30 @@
     }
 
     .sub-CarrerPage-container p {
-        font-size: 25px;
+        font-size: 28px;
         line-height: 30px;
+        padding-top: 4px;
+
     }
 
-    .sub-CarrerPage-container h2 {
+    .search-container {
+        border-top: 1px solid #D1D5DB;
+    }
+
+    .full-sec-sixth-container div:nth-child(5) {
+        border-top: 1px solid #D1D5DB;
+    }
+
+    .full-sec-sixth-container div:nth-child(6) {
+        border-top: 1px solid #D1D5DB;
+    }
+
+
+
+    .sub-CarrerPage-container h2 br {
         font-size: 13.5px;
+
+        display: none;
     }
 
     .box-CarrerPage-container div {

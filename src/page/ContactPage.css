@@ -18,8 +18,9 @@
 
 /* Hero Section */
 .contact-hero-container {
-    padding-top: 200px;
+    padding-top: 180px;
     border-bottom: 1px solid var(--gray-line);
+    padding-bottom: 80px;
 }
 
 .contact-eyebrow p {
@@ -64,416 +65,197 @@
     gap: 64px;
 }
 
-
-/* ============================================
-   1400px+ — Large desktop / wide monitors
-   ============================================ */
-@media (min-width: 1400px) {
-    .contact-maxwidth {
-        max-width: 1320px;
-    }
-
-    .contact-hero-container {
-        padding-top: 220px;
-    }
-
-    .contact-grid {
-        gap: 80px;
-    }
-}
-
-/* ============================================
-   1200px — Standard desktop
-   ============================================ */
-@media (max-width: 1200px) {
-    .contact-maxwidth {
-        max-width: 960px;
-    }
-
-    .contact-grid {
-        gap: 56px;
-    }
-
-    .office-list {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* ============================================
-   992px — Small laptop
-   ============================================ */
-@media (max-width: 992px) {
-    .contact-maxwidth {
-        max-width: 100%;
-        padding: 0 24px;
-    }
-
-    .contact-hero-container {
-        padding-top: 160px;
-    }
-
-    .contact-hero-subheading p {
-        font-size: 16.5px;
-        color: var(--gray);
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
-    }
-
-    .contact-form-container {
-        padding: 80px 0;
-    }
-
-    .offices-container {
-        padding: 80px 0;
-    }
-
-    .office-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* ============================================
-   768px — Tablet
-   ============================================ */
-@media (max-width: 768px) {
-    .contact-maxwidth {
-        max-width: 350px;
-        margin: 0px auto;
-        padding: 0;
-    }
-
-    .contact-hero-container {
-        padding-top: 120px;
-    }
-
-    .contact-eyebrow p {
-        font-size: 12px;
-        color: var(--violet);
-    }
-
-    .contact-hero-subheading p {
-        font-size: 15.5px;
-        color: var(--gray);
-    }
-
+@media (max-width: 880px) {
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+}
 
-    .contact-form-container {
-        padding: 60px 0;
-    }
+.contact-form-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-    .form-field label {
-        font-size: 13.5px;
-        color: var(--ink);
-    }
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-    .form-field input,
-    .form-field select,
-    .form-field textarea {
-        font-size: 14px;
-        color: var(--ink);
-    }
+.form-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    font-family: var(--sans);
+}
 
-    .contact-info-item h4 {
-        font-size: 15px;
-        color: var(--ink);
-    }
+.form-field input,
+.form-field select,
+.form-field textarea {
+    padding: 12px 14px;
+    border: 1px solid var(--gray-line);
+    border-radius: 6px;
+    font-size: 14.5px;
+    font-family: var(--sans);
+    color: var(--ink);
+}
 
-    .contact-info-item p {
-        font-size: 14px;
-        color: var(--gray);
-    }
+.form-field textarea {
+    min-height: 110px;
+    resize: vertical;
+}
 
-    .offices-container {
-        padding: 60px 0;
-    }
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 2px solid var(--violet);
+    outline-offset: 2px;
+    border-color: var(--violet);
+}
 
-    .offices-header .eyebrow {
-        font-size: 12px;
-        color: var(--magenta);
-    }
+.btn-primary {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 14.5px;
+    padding: 13px 22px;
+    border-radius: 2px;
+    border: none;
+    background: var(--ink);
+    color: var(--white);
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.15s ease;
+}
 
+.btn-primary:hover {
+    background: var(--violet);
+}
+
+.contact-info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.contact-info-item h4 {
+    font-family: var(--display);
+    font-size: 15.5px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.contact-info-item p {
+    font-size: 14.5px;
+    color: var(--gray);
+    font-family: var(--sans);
+}
+
+.contact-info-item a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.contact-info-item a:hover {
+    color: var(--violet);
+}
+
+/* Offices Section */
+.offices-container {
+    background: var(--ink);
+    color: var(--white);
+    padding: 100px 0;
+}
+
+.offices-header h2 {
+    font-family: var(--display);
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 12px;
+}
+
+.offices-header .eyebrow {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--magenta);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+}
+
+.office-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 40px;
+}
+
+@media (max-width: 880px) {
     .office-list {
         grid-template-columns: 1fr 1fr;
     }
 
-    .office-item h4 {
-        font-size: 16px;
-        color: var(--white);
-    }
-
-    .office-item p {
-        font-size: 12.5px;
-        color: rgba(255, 255, 255, 0.55);
-    }
-
-    .contact-end-btn {
-        width: 100%;
-    }
-}
-
-/* ============================================
-   576px — Large phones
-   ============================================ */
-@media (max-width: 576px) {
     .contact-maxwidth {
-        max-width: 100%;
-        padding: 0 18px;
-    }
-
-    .contact-hero-container {
-        padding-top: 100px;
-    }
-
-    .contact-eyebrow p {
-        font-size: 11.5px;
-        color: var(--violet);
-    }
-
-    .contact-hero-subheading p {
-        font-size: 14.5px;
-        color: var(--gray);
-    }
-
-    .contact-form-container {
-        padding: 48px 0;
-    }
-
-    .contact-form-col {
-        gap: 16px;
-    }
-
-    .form-field input,
-    .form-field select,
-    .form-field textarea {
-        font-size: 13.5px;
-        padding: 10px 12px;
-        color: var(--ink);
-    }
-
-    .contact-info-col {
-        gap: 20px;
-    }
-
-    .contact-info-item h4 {
-        font-size: 14.5px;
-        color: var(--ink);
-    }
-
-    .contact-info-item p {
-        font-size: 13.5px;
-        color: var(--gray);
-    }
-
-    .offices-container {
-        padding: 48px 0;
-    }
-
-    .office-list {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .office-item {
-        padding: 20px 16px;
-    }
-
-    .office-item h4 {
-        font-size: 15px;
-        color: var(--white);
-    }
-
-    .office-item p {
-        font-size: 12px;
-        color: rgba(255, 255, 255, 0.55);
-    }
-
-    .contact-end-btn {
-        width: 100%;
-        padding: 13px 15px;
-    }
-}
-
-/* ============================================
-   425px — Small phones
-   ============================================ */
-@media (max-width: 425px) {
-    .contact-maxwidth {
-        max-width: 370px;
+        max-width: 350px;
         margin: 0px auto;
-        padding: 0;
     }
+}
 
+.office-item {
+    background: var(--ink);
+    padding: 26px 22px;
+}
+
+.office-item h4 {
+    font-family: var(--display);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.office-item p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--sans);
+}
+
+.contact-end-btn {
+    background-color: #0D0D0F;
+    width: 200px;
+    padding: 15px 15px;
+    color: #F4EFFF;
+    transition: auto;
+
+}
+
+.contact-end-btn:hover {
+    background-color: #5B00C9;
+}
+
+@media (max-width: 375px) {
     .contact-hero-container {
         padding-top: 90px;
     }
 
-    .contact-hero-heading h1 {
-        font-size: 34px;
+    .contact-hero-subheading {
+        padding-bottom: 40px;
     }
 
-    .contact-hero-subheading p {
-        font-size: 14px;
-        color: var(--gray);
+    .contact-form-container {
+        padding-top: 40px;
     }
 
-    .form-field label {
-        font-size: 13px;
-        color: var(--ink);
+    .contact-info-col {
+        border-bottom: 1px solid #E6E3EC;
+        border-top: 1px solid #E6E3EC;
+        padding: 4% 0px;
+
     }
 
-    .form-field input,
-    .form-field select,
-    .form-field textarea {
-        font-size: 13px;
-        color: var(--ink);
-    }
 
-    .contact-info-item h4 {
-        font-size: 14px;
-        color: var(--ink);
-    }
-
-    .contact-info-item p {
-        font-size: 13px;
-        color: var(--gray);
-    }
-
-    .office-list {
-        grid-template-columns: 1fr;
-    }
-
-    .office-item h4 {
-        font-size: 14.5px;
-        color: var(--white);
-    }
-
-    .office-item p {
-        font-size: 12px;
-        color: rgba(255, 255, 255, 0.55);
-    }
-}
-
-/* ============================================
-   375px — iPhone SE / standard mobile
-   ============================================ */
-@media (max-width: 375px) {
-    .contact-maxwidth {
-        max-width: 340px;
-    }
-
-    .contact-hero-heading h1 {
-        font-size: 30px;
-    }
-
-    .contact-hero-subheading p {
-        font-size: 13.5px;
-        color: var(--gray);
-    }
-
-    .form-field input,
-    .form-field select,
-    .form-field textarea {
-        font-size: 12.5px;
-        padding: 10px 12px;
-        color: var(--ink);
-    }
-
-    .contact-info-item h4 {
-        font-size: 13.5px;
-        color: var(--ink);
-    }
-
-    .contact-info-item p {
-        font-size: 12.5px;
-        color: var(--gray);
-    }
-
-    .offices-header h2 {
-        font-size: 26px;
-    }
-
-    .office-item h4 {
-        font-size: 14px;
-        color: var(--white);
-    }
-
-    .office-item p {
-        font-size: 11.5px;
-        color: rgba(255, 255, 255, 0.55);
-    }
-}
-
-/* ============================================
-   320px — Smallest common mobile
-   ============================================ */
-@media (max-width: 320px) {
-    .contact-maxwidth {
-        max-width: 300px;
-    }
-
-    .contact-hero-container {
-        padding-top: 80px;
-    }
-
-    .contact-hero-heading h1 {
-        font-size: 26px;
-    }
-
-    .contact-hero-subheading p {
-        font-size: 13px;
-        color: var(--gray);
-    }
-
-    .form-field label {
-        font-size: 12.5px;
-        color: var(--ink);
-    }
-
-    .form-field input,
-    .form-field select,
-    .form-field textarea {
-        font-size: 12px;
-        padding: 9px 10px;
-        color: var(--ink);
-    }
-
-    .btn-primary,
-    .contact-end-btn {
-        font-size: 13px;
-        padding: 11px 14px;
-    }
-
-    .contact-info-item h4 {
-        font-size: 13px;
-        color: var(--ink);
-    }
-
-    .contact-info-item p {
-        font-size: 12px;
-        color: var(--gray);
-    }
-
-    .offices-header h2 {
-        font-size: 22px;
-    }
-
-    .office-item {
-        padding: 18px 14px;
-    }
-
-    .office-item h4 {
-        font-size: 13.5px;
-        color: var(--white);
-    }
-
-    .office-item p {
-        font-size: 11px;
-        color: rgba(255, 255, 255, 0.55);
-    }
 }

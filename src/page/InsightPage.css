@@ -10,7 +10,7 @@
 }
 
 .headind-InsightPage-container {
-    padding-top: 200px;
+    padding-top: 180px;
 }
 
 .headind-InsightPage-container h1 {
@@ -29,7 +29,7 @@
     line-height: 65.3px;
     font-size: 64px;
     letter-spacing: 1.92px;
-    padding-top: 15px;
+    padding-top: 22px;
 }
 
 .headind-InsightPage-container span {
@@ -48,13 +48,13 @@
     line-height: 26.3px;
     font-size: 17.5px;
     letter-spacing: 1.92px;
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 70px;
 }
 
 .two-InsightPage-containe {
     border-top: 1px solid #E6E3EC;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .button {
@@ -99,9 +99,10 @@
 }
 
 .last-container {
-    padding-top: 180px;
+    border-top: 1px solid #E6E3EC;
+    padding-top: 100px;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 
 .full-container h1 {
@@ -163,6 +164,9 @@
 
 .last-container button:hover {
     background-color: #5B00C9;
+}
+.button-content{
+    padding-bottom: 70px;
 }
 
 /* ========== RESPONSIVE - TABLET (max-width: 768px) ========== */
@@ -469,8 +473,33 @@
         max-width: 340px;
     }
 
+    .InsightPage-container {
+        padding-top: 10px;
+    }
+
+    .headind-InsightPage-container h2 br {
+        display: none;
+    }
+
     .headind-InsightPage-container h1 {
         font-size: 12.5px;
+    }
+
+    .sub-last-container button {
+        width: 200px;
+    }
+
+    .last-container {
+        border-top: 1px solid #E6E3EC;
+
+    }
+
+    .full-container {
+        padding-bottom: 30px;
+    }
+
+    .last-container {
+        padding-top: 14px;
     }
 
     .headind-InsightPage-container p,

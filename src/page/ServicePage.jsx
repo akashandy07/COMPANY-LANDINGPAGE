@@ -1,8 +1,10 @@
 import React from 'react'
 import './ServicePage.css'
 import FotterPage from '../fotter/FotterPage'
+import { useNavigate } from 'react-router-dom'
 
 const ServicePage = () => {
+    const nvaigate = useNavigate()
     return (
         <>
             <div className='service-container'>
@@ -110,7 +112,7 @@ const ServicePage = () => {
                             <h1>Not sure which practice fits?</h1>
                             <p>Tell us the problem — we'll tell you who should be in the room.</p>
 
-                            <button>Start Conversation</button>
+                            <button onClick={() => nvaigate("/contact")}>Start Conversation</button>
 
                         </div>
                     </div>

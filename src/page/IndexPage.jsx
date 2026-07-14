@@ -5,15 +5,19 @@ import cardone from '../assets/cardone.png'
 import cardtwo from '../assets/cardtwo.png'
 import cardthree from '../assets/cardthree.png'
 import FotterPage from '../fotter/FotterPage'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const IndexPage = () => {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="index-container">
         <div className="index-maxwidth">
-          
+
           <div className='index-logo'>
             <h1>--- Global Technology & Strategy Consulting</h1>
           </div>
@@ -27,8 +31,8 @@ const IndexPage = () => {
             <p>From strategy to execution, Aurion partners with enterprise  <br />leaders to turn disruption into advantage — across cloud, AI, <br />and operations.</p>
           </div>
           <div className='btn'>
-            <button>Start a conversation</button>
-            <button className='btnn'>See our work</button>
+            <button onClick={() => navigate("/contact")}>Start a conversation</button>
+            <button onClick={() => navigate("/about")} className='btnn'>See our work</button>
           </div>
           <div className='index-image'>
             <img src={logo} alt="index" />
@@ -82,8 +86,8 @@ const IndexPage = () => {
             <div>
               <p>01</p>
               <h1>Strategy & Consulting</h1>
-              <p>Define where to play and how to win, backed by <br /> data not instinct.</p>
-              <h2>Explore</h2>
+              <p>Market entry, portfolio strategy, and operating <br /> model design — grounded in data, tested against <br /> execution reality before it's final.</p>
+              <h2 >Explore</h2>
             </div>
             <div>
               <p>02</p>
@@ -99,20 +103,20 @@ const IndexPage = () => {
             </div>
             <div>
               <p>04</p>
-              <h1>Artificial Intelligence</h1>
-              <p>Develop and deploy AI-driven solutions to automate and enhance business processes.</p>
+              <h1>Experience Design</h1>
+              <p>Research-led product and service design for <br /> customer and employee-facing experiences.</p>
               <h2>Explore</h2>
             </div>
             <div>
               <p>05</p>
-              <h1>Artificial Intelligence</h1>
-              <p>Develop and deploy AI-driven solutions to automate and enhance business processes.</p>
+              <h1>Security</h1>
+              <p>Threat modeling, zero-trust architecture, and <br /> incident response built in from day one.</p>
               <h2>Explore</h2>
             </div>
             <div>
               <p>06</p>
-              <h1>Artificial Intelligence</h1>
-              <p>Develop and deploy AI-driven solutions to automate and enhance business processes.</p>
+              <h1>Operations</h1>
+              <p>Supply chain, finance, and core process redesign <br /> for organizations scaling past what their systems <br /> were built for.</p>
               <h2>Explore</h2>
             </div>
           </div>
