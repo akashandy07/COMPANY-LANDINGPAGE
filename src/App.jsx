@@ -9,22 +9,82 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import InsightPage from './page/InsightPage'
 import ApplyForm from './page/ApplyForm'
-
+import ProtectedRoute from './login/ProtectedRoute'
+import LoginPage from './login/LoginPage'
 
 const App = () => {
   return (
     <BrowserRouter>
       <div>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<IndexPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/insight" element={<InsightPage />} />
-          <Route path="/carrer" element={<CarrerPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/ApplyForm" element={<ApplyForm />} />
 
+        <Routes>
+          {/* Public Route */}
+          <Route path="/login" element={<LoginPage />} />
+
+          {/* Protected Routes */}
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <IndexPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/about"
+            element={
+              <ProtectedRoute>
+                <AboutPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/service"
+            element={
+              <ProtectedRoute>
+                <ServicePage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/insight"
+            element={
+              <ProtectedRoute>
+                <InsightPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/carrer"
+            element={
+              <ProtectedRoute>
+                <CarrerPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/contact"
+            element={
+              <ProtectedRoute>
+                <ContactPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/ApplyForm"
+            element={
+              <ProtectedRoute>
+                <ApplyForm />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </div>
     </BrowserRouter>

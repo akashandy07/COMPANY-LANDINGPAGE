@@ -19,7 +19,7 @@ const IndexPage = () => {
         <div className="index-maxwidth">
 
           <div className='index-logo'>
-            <h1>--- Global Technology & Strategy Consulting</h1>
+            <h1>___ Global Technology & Strategy Consulting</h1>
           </div>
           <div className='index-heading'>
             <p>We help the world's <br />

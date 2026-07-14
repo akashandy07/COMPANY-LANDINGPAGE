@@ -758,7 +758,7 @@
     }
 
     .stats-grid .stat-item {
-        border-bottom: 1px solid #6b6b72;
+        border-bottom: 1px solid #e6e3ec;
         border-right: none;
         padding-bottom: 25px;
         padding-top: 40px;
@@ -773,7 +773,7 @@
     }
 
     .values-grid div {
-        border-bottom: 1px solid #6b6b72;
+        border-bottom: 1px solid #e6e3ec;
         padding-bottom: 25px;
     }
 
@@ -807,6 +807,10 @@
     .cta-buttons .btn-outline {
         padding: 10px 10px;
         font-size: 14.5px;
+    }
+
+    .timeline-subtitle {
+        padding-top: 1px;
     }
 }
 

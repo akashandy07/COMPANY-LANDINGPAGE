@@ -459,10 +459,10 @@
     }
 
     .InsightPage-container {
-        padding-top: 90px;
+        padding-top: 40px;
     }
 
-    .headind-InsightPage-container h2 br {
+    .headind-InsightPage-container h2 p br {
         display: none;
     }
 
@@ -520,7 +520,7 @@
     }
 
     .headind-InsightPage-container {
-        padding-top: 90px;
+        padding-top: 50px;
     }
 
     .headind-InsightPage-container h1 {

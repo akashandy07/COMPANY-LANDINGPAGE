@@ -478,9 +478,11 @@
   }
 
   .two-inside-service-container div:nth-child(1) {
-    border-top: 1px solid #E5E7EB;
+    border-top: 2px solid #E5E7EB;
     padding-top: 20px;
   }
+  
+  
 }
 
 /* 320px — Smallest common mobile */

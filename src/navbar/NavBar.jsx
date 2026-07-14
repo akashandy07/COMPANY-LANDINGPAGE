@@ -1,14 +1,24 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import './NavBar.css'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import './NavBar.css';
 
 const NavBar = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const navigate = useNavigate();
+
+    const user = localStorage.getItem("user");
 
     const closeMenu = () => {
-        setMenuOpen(false)
-    }
+        setMenuOpen(false);
+    };
+
+    const logout = () => {
+        localStorage.removeItem("user");
+        closeMenu();
+        navigate("/login");
+    };
 
     return (
         <div className="navbar">
@@ -30,63 +40,50 @@ const NavBar = () => {
 
                     {/* Navigation */}
                     <nav className={menuOpen ? "nav-links active" : "nav-links"}>
-                        <Link
-                            to="/"
-                            className="nav-link"
-                            onClick={closeMenu}
-                        >
+
+                        <Link to="/" className="nav-link" onClick={closeMenu}>
                             Home
                         </Link>
-                        <Link
-                            to="/about"
-                            className="nav-link"
-                            onClick={closeMenu}
-                        >
+
+                        <Link to="/about" className="nav-link" onClick={closeMenu}>
                             About
                         </Link>
 
-                        <Link
-                            to="/service"
-                            className="nav-link"
-                            onClick={closeMenu}
-                        >
+                        <Link to="/service" className="nav-link" onClick={closeMenu}>
                             Services
                         </Link>
 
-                        <Link
-                            to="/carrer"
-                            className="nav-link"
-                            onClick={closeMenu}
-                        >
+                        <Link to="/carrer" className="nav-link" onClick={closeMenu}>
                             Careers
                         </Link>
 
-                        <Link
-                            to="/insight"
-                            className="nav-link"
-                            onClick={closeMenu}
-                        >
+                        <Link to="/insight" className="nav-link" onClick={closeMenu}>
                             Insights
                         </Link>
 
-                        <Link
-                            to="/contact"
-                            className="nav-link"
-                            onClick={closeMenu}
-                        >
+                        <Link to="/contact" className="nav-link" onClick={closeMenu}>
                             Contact
                         </Link>
 
                         {/* Mobile Buttons */}
                         <div className="cta-group mobile-btn">
 
-                            <Link
-                                to="/login"
-                                className="client-login"
-                                onClick={closeMenu}
-                            >
-                                Client Login
-                            </Link>
+                            {user ? (
+                                <button
+                                    className="client-login"
+                                    onClick={logout}
+                                >
+                                    Logout
+                                </button>
+                            ) : (
+                                <Link
+                                    to="/login"
+                                    className="client-login"
+                                    onClick={closeMenu}
+                                >
+                                    Client Login
+                                </Link>
+                            )}
 
                             <button className="talk-btn">
                                 Let's Talk
@@ -99,12 +96,21 @@ const NavBar = () => {
                     {/* Desktop Buttons */}
                     <div className="cta-group desktop-btn">
 
-                        <Link
-                            to="/login"
-                            className="client-login"
-                        >
-                            Client Login
-                        </Link>
+                        {user ? (
+                            <button
+                                className="client-login"
+                                onClick={logout}
+                            >
+                                Logout
+                            </button>
+                        ) : (
+                            <Link
+                                to="/login"
+                                className="client-login"
+                            >
+                                Client Login
+                            </Link>
+                        )}
 
                         <button className="talk-btn">
                             Let's Talk
@@ -115,7 +121,7 @@ const NavBar = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default NavBar
+export default NavBar;

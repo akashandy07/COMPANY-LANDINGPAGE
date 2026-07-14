@@ -991,7 +991,7 @@
     }
 
     .CarrerPage-container {
-        padding-top: 85px;
+        padding-top: 90px;
     }
 
     .sub-CarrerPage-container h1 {
@@ -1049,7 +1049,12 @@
    ============================================ */
 @media (max-width: 375px) {
     .CarrerPage-container {
-        padding-top: 85px;
+        padding-top: 90px;
+        /* padding-bottom: 10px; */
+    }
+
+    .sub-CarrerPage-container {
+        padding-bottom: 10px;
     }
 
     .max-CarrerPage-container {
@@ -1063,7 +1068,15 @@
     .sub-CarrerPage-container p {
         font-size: 28px;
         line-height: 30px;
-        padding-top: 4px;
+
+        br {
+            display: none;
+        }
+
+    }
+
+    .sub-CarrerPage-container h2 {
+        padding-top: 1px;
     }
 
     .search-container {
@@ -1129,6 +1142,21 @@
     .final-div-in-carrer p {
         font-size: 13.5px;
     }
+
+    .sec-CarrerPage-container {
+        padding-top: 10px
+    }
+
+    .filter-group {
+        padding-top: 10px;
+        
+    }
+
+    .search-fixed {
+        border-bottom: 1px solid #D1D5DB;
+    }
+
+
 }
 
 /* ============================================
