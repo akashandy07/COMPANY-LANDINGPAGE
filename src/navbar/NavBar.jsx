@@ -30,7 +30,13 @@ const NavBar = () => {
 
                     {/* Navigation */}
                     <nav className={menuOpen ? "nav-links active" : "nav-links"}>
-
+                        <Link
+                            to="/"
+                            className="nav-link"
+                            onClick={closeMenu}
+                        >
+                            Home
+                        </Link>
                         <Link
                             to="/about"
                             className="nav-link"
