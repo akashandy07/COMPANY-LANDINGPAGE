@@ -64,7 +64,7 @@ const NavBar = () => {
                         <Link to="/contact" className="nav-link" onClick={closeMenu}>
                             Contact
                         </Link>
-
+ 
                         {/* Mobile Buttons */}
                         <div className="cta-group mobile-btn">
 
